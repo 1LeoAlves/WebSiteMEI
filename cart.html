@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="Styles/header.css">
+   <link rel="stylesheet" href="Styles/styles.css">
+   <link rel="stylesheet" href="Styles/cart.css">
+    <link rel="shortcut icon" type="image/jpg" href="imagem/rosa.jpg.png"/>
+    <title>Seu Carrinho</title>
+</head>
+<body>
+    <nav id="navbar">
+        <i class="fa-solid fa-flower" style=color:black; id= "nav_logo">FLOWER</i>
+        <ul id="nav-list">
+            <li class="nav-item active">
+            <a href="index.html">Início</a>
+            </li>
+            <li class="nav-item">
+                <a href="#section_contact">Contato</a>
+            </li>
+            <li class="nav-item">
+                <a href="#section_contact">Localização</a>
+            </li>
+            <button class="btn-default-2">
+                <img onclick="window.location.href='//127.0.0.1:5500/cart.html'" src="imagem/carrinho-de-compras.png" alt="" style="width: 1rem;">
+            </button>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Seu Carrinho de Compras</h2>
+        <div class="cart-container">
+            <div class="cart-item">
+                <img src="imagem/Bu.png" alt="Flor 1">
+                <div class="item-details">
+                    <h3>Buque Lavanda</h3>
+                    <p>Quantidade: 1</p>
+                    <p>Preço: R$ 15,00</p>
+                </div>
+                <button class="remove-item"><img src="imagem/lata-de-lixo.png" alt=""> Remover</button>
+            </div>
+            <div class="cart-item">
+                <img src="imagem/bu2.jpg.png" alt="Flor 2">
+                <div class="item-details">
+                    <h3>Buque Colorido</h3>
+                    <p>Quantidade: 1</p>
+                    <p>Preço: R$ 25,00</p>
+                </div>
+                <button class="remove-item"> <img src="imagem/lata-de-lixo.png" alt=""> Remover</button>
+            </div>
+        </div>
+        <div class="cart-summary">
+            <h3>Total: R$ 40,00</h3>
+            <button class="checkout-btn">Finalizar Compra</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Floricultura Bella Flor. Todos os direitos reservados.</p>
+    </footer>
+</body>
+<footer>
+
+</footer>
+</html>

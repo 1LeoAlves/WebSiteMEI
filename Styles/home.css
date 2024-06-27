@@ -65,6 +65,7 @@
     }
     #cta{
         width: 100%;
+        gap: .75rem; 
     }
     #banner img{
         display: none;

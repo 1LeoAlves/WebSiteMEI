@@ -37,6 +37,26 @@ content{
 .btn-default:hover{
     background-color: pink;
 }
+
+.btn-default-2{
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e84393;
+    border-radius: 12px;
+    padding: 1%;
+    font-weight: 600;
+    font-size: 100%;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
+    cursor: pointer;
+    text-wrap: nowrap;
+    text-decoration: none;
+    color: white;
+    transition: background-color .3s ease;
+    width: min-content;
+}
+
 .social-media-buttons {
     display: flex;
     gap: 18px;
@@ -91,3 +111,6 @@ content{
     width: 90%;
 }
 
+footer{
+    background-color: rgb(71, 71, 71);
+}

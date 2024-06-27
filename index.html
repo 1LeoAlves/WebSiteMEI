@@ -10,7 +10,9 @@
    <link rel="stylesheet" href="Styles/opcoes.css">
    <link rel="stylesheet" href="Styles/Localizacao.css">
    <link rel="stylesheet" href="Styles/form.css">
+   <link rel="stylesheet" href="Styles/footer.css">
     <title>Catalogo Flores</title>
+    <link rel="shortcut icon" type="image/jpg" href="imagem/rosa.jpg.png"/>
 </head>
 <body>
     <header>
@@ -18,7 +20,7 @@
             <i class="fa-solid fa-flower" style=color:black; id= "nav_logo">FLOWER</i>
             <ul id="nav-list">
                 <li class="nav-item active">
-                <a href="">Início</a>
+                <a href="index.html">Início</a>
                 </li>
                 <li class="nav-item">
                     <a href="#section_contact">Contato</a>
@@ -26,8 +28,8 @@
                 <li class="nav-item">
                     <a href="#section_contact">Localização</a>
                 </li>
-                <button class="btn-default">
-                    Encomende aqui
+                <button onclick="window.location.href='//127.0.0.1:5500/cart.html'" class="btn-default-2">
+                    <img src="imagem/carrinho-de-compras.png" alt="" style="width: 1rem;">
                 </button>
             </ul>
         </nav>
@@ -240,12 +242,12 @@
             </div>
             <div id="section_contact">
                 <form> 
-                    <h1 name="#Contato" > ENTRE EM CONTATO</h1>
+                    <h1 name="#Contato"></h1>
                     <div class="form-container">
-                        <h2>Contact Us</h2>
+                        <h2>Fale Conosco!</h2>
                         <div class="form-group">
                             <i class="fa-solid fa-user"></i>
-                            <label for="name">Name</label>
+                            <label for="name">Nome Completo</label>
                             <input type="text" id="name" name="name" required>
                         </div>
                         <div class="form-group">
@@ -255,7 +257,7 @@
                         </div>
                         <div class="form-group">
                             <i class="fa-solid fa-comments"></i>
-                            <label for="message">Message</label>
+                            <label for="message">Sua Mensagem</label>
                             <textarea id="message" name="message" required></textarea>
                         </div>
                         <button type="submit" class="submit-btn">Submit</button>
@@ -266,5 +268,27 @@
     </header>
 </body>
 <footer>
+    <button onclick="toggleSection('section1')">Informações da Loja</button>
+    <button onclick="toggleSection('section2')">Política de Privacidade</button>
+    <button onclick="toggleSection('section3')">Termos de Serviço</button>
+    
+    <div id="section1" class="footer-section">
+        <h3>Informações da Loja</h3>
+        <p>Endereço: Rua das Flores, 123 - Centro, Cidade Exemplo</p>
+        <button onclick="toggleSection('section1')">Fechar</button>
+    </div>
+    <div id="section2" class="footer-section">
+        <h3>Política de Privacidade</h3>
+        <p>Nós respeitamos sua privacidade e estamos comprometidos em protegê-la.</p>
+        <button onclick="toggleSection('section2')">Fechar</button>
+    </div>
+    <div id="section3" class="footer-section">
+        <h3>Termos de Serviço</h3>
+        <p>Leia nossos termos de serviço para entender seus direitos e responsabilidades.</p>
+        <button onclick="toggleSection('section3')">Fechar</button>
+    </div>
+    
+    <p>&copy; 2024 Floricultura Bella Flor. Todos os direitos reservados.</p>
 </footer>
+<script src="script.js"></script>
 </html>
