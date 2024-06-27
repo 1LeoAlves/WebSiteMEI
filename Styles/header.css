@@ -28,13 +28,37 @@ header {
     gap: 10%;
     width: 100%;
     font-size: 100%;
+    margin: 0;
+    padding: 0;
 }
 .nav-item a{
     text-decoration: none;
     color: #1d1d1d;
     font-weight: 600;
 }
-.nav-item.active a {
+
+.nav-item {
+    position: relative;
+}
+
+.nav-button {
+    text-decoration: none;
     color: black;
-    border-bottom: 3px solid #e849e8;
+    padding: 5px 10px;
+    display: block; /* torna o link um elemento de bloco para ocupar toda a largura do pai */
+}
+
+.underline {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #e84393;
+    transition: width 0.3s ease;
+    z-index: -1;
+}
+
+.nav-item.active .underline {
+    width: 100%;
 }

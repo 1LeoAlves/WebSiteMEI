@@ -11,7 +11,7 @@
    <link rel="stylesheet" href="Styles/Localizacao.css">
    <link rel="stylesheet" href="Styles/form.css">
    <link rel="stylesheet" href="Styles/footer.css">
-    <title>Catalogo Flores</title>
+    <title>Catálogo Flores</title>
     <link rel="shortcut icon" type="image/jpg" href="imagem/rosa.jpg.png"/>
 </head>
 <body>
@@ -19,16 +19,19 @@
         <nav id="navbar">
             <i class="fa-solid fa-flower" style=color:black; id= "nav_logo">FLOWER</i>
             <ul id="nav-list">
-                <li class="nav-item active">
-                <a href="index.html">Início</a>
+                <li class="nav-item">
+                    <a class="nav-button" onclick="CheckPage(document.location.href)">Início </a>
+                    <div id="index" class="underline"></div>
                 </li>
                 <li class="nav-item">
-                    <a href="#section_contact">Contato</a>
+                    <a class="nav-button" onclick="window.location.href = window.location.pathname + '#section_contact'">Contato</a>
+                    <div id="Cona" class="underline"></div>
                 </li>
                 <li class="nav-item">
-                    <a href="#section_contact">Localização</a>
+                    <a class="nav-button" onclick="window.location.href = window.location.pathname + '#section_contact'" href="#section_contact">Localização</a>
+                    <div class="underline"></div>
                 </li>
-                <button onclick="window.location.href='//127.0.0.1:5500/cart.html'" class="btn-default-2">
+                <button onclick="window.location.href='cart.html'" class="btn-default-2">
                     <img src="imagem/carrinho-de-compras.png" alt="" style="width: 1rem;">
                 </button>
             </ul>
@@ -38,7 +41,7 @@
             <div id="cta">
              <h1 class="title">Floresça suas <span>Emoções</span></h1>
              <p class="description">
-               <p> Seja bem vindo ao nosso catalogo, aqui você pode encontrar boa parte dos nosso produtos, para mais informações, por favor entre em contato pelo nosso numero.</p>
+               <p> Seja bem vindo ao nosso catálogo, aqui você pode encontrar boa parte dos nosso produtos, para mais informações, por favor entre em contato pelo nosso número.</p>
 
                  <div id="cta-buttons">
                     <a href="#" class="btn-default">
@@ -271,7 +274,10 @@
     <button onclick="toggleSection('section1')">Informações da Loja</button>
     <button onclick="toggleSection('section2')">Política de Privacidade</button>
     <button onclick="toggleSection('section3')">Termos de Serviço</button>
-    
+    <button onclick="toggleSection('section4')">Quem somos</button>
+    <button onclick="toggleSection('section5')">Como usar o site</button>
+    <button onclick="toggleSection('section6')">Formas de pagamento</button>
+
     <div id="section1" class="footer-section">
         <h3>Informações da Loja</h3>
         <p>Endereço: Rua das Flores, 123 - Centro, Cidade Exemplo</p>
@@ -287,8 +293,23 @@
         <p>Leia nossos termos de serviço para entender seus direitos e responsabilidades.</p>
         <button onclick="toggleSection('section3')">Fechar</button>
     </div>
+    <div id="section4" class="footer-section">
+        <h3>Quem somos</h3>
+        <p>Uma empresa focada em entregar produtos de qualidade que deixem a vida dos nosso clientes perfumados.</p>
+        <button onclick="toggleSection('section4')">Fechar</button>
+    </div>
+    <div id="section5" class="footer-section">
+        <h3>Como usar o site</h3>
+        <p>Você pode adicionar os items ao carrinho e remove-los conforme quiser, para acessar o carrinho, na pagina principal, clique no botão superior direito da página.</p>
+        <button onclick="toggleSection('section5')">Fechar</button>
+    </div>
+    <div id="section6" class="footer-section">
+        <h3>Formas de Pagamento</h3>
+        <p>Aceitamos pagamentos em forma de cartão (Crédio/débito) e em pix através da API do SumUp, uma mediadora de pagamentos online.</p>
+        <button onclick="toggleSection('section6')">Fechar</button>
+    </div>
     
-    <p>&copy; 2024 Floricultura Bella Flor. Todos os direitos reservados.</p>
+    <p>&copy; 2024 Floricultura Flower. Todos os direitos reservados.</p>
 </footer>
 <script src="script.js"></script>
 </html>
